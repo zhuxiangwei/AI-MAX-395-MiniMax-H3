@@ -1,0 +1,15 @@
+[Unit]
+Description=ComfyUI Server (PyTorch ROCm)
+After=network.target
+
+[Service]
+Type=exec
+ExecStartPre=/bin/bash /home/user/scripts/rocm-wait-devices.sh 90
+ExecStart=/bin/bash /home/user/scripts/comfyui-server.sh
+Restart=on-failure
+RestartSec=5
+WorkingDirectory=/home/user/ComfyUI
+KillMode=process
+
+[Install]
+WantedBy=default.target

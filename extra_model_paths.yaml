@@ -1,0 +1,10 @@
+# ComfyUI 统一模型路径映射（~/models/comfyui/，按模型家族分目录）
+# 多目录必须用 YAML 多行字符串（|-），列表格式会崩
+comfyui_models:
+    diffusion_models: |-
+      /home/user/models/comfyui/minimax-h3/diffusion_models
+      /home/user/models/comfyui/fasth3/diffusion_models
+    text_encoders: |-
+      /home/user/models/comfyui/minimax-h3/text_encoders
+    vae: |-
+      /home/user/models/comfyui/minimax-h3/vae

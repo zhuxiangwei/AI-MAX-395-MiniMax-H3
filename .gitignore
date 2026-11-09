@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+/out/
+# 生成产物与参考素材不入库
+*.mp4
+*.wav
+*.png
+*.jpg

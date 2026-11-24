@@ -126,7 +126,18 @@ curl -s http://127.0.0.1:8188/system_stats       # 就绪与显存
 
 ## 9. 许可证提示
 
-MiniMax H3 / FastH3 权重适用 **MiniMax H3 社区许可证**（地域 / 营收 / 署名 / 二次训练限制），商用交付前逐项核对上游 LICENSE 与数据集条款；本仓库只含部署代码与官方工作流镜像，不分发权重。
+MiniMax H3 / FastH3 权重适用 **MiniMax H3 Community License Agreement**（与 H3-Image 的社区许可为不同文件，条款须各自核对）。以下为 `MiniMaxAI/MiniMax-H3` 上游 LICENSE 原文要点：
+
+| 条款 | 原文要点 |
+|---|---|
+| 适用地域 | 全球，**排除欧盟、英国、韩国、美国**；且**Output / results 也不得在排除地域使用、复制、修改、分发或展示**（§IV.4） |
+| 营收门槛 | 商用产品/服务年营收超过 **100 万美元**须事先取得 MiniMax 书面授权（`api@minimax.io`，标题 `MiniMax H3 licensing - authorization request`）（§IV.1） |
+| 署名 | 商用产品/服务 UI 须显著展示 `MiniMax H3`（§IV.2） |
+| **Output 禁训练** | **不得使用 MiniMax H3 Works 或其 Output / results 改进任何其他 AI 模型**（MiniMax H3 及其 Model Derivatives 除外）（§IV.3）——与「用生成图/视频做训练集蒸馏自有权重」的资产回流路线直接冲突，交付前须先规避或换许可 |
+| Output 权属 | MiniMax 不对 Output 主张权利；使用者自行负责（§V.4） |
+| 托管服务 | 向第三方提供可生成 Output 的产品/服务/Hosted Service，须在提供前满足额外条款（§IV.5） |
+
+⚠️ 若成片投欧美平台，先解决Output 地域限制——这与模型部署在哪台机器无关。商用交付前逐项核对上游 LICENSE 与数据集条款；本仓库只含部署代码与官方工作流镜像，不分发权重。
 
 ---
 
